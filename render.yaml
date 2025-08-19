@@ -1,0 +1,7 @@
+services:
+  - type: worker
+    name: holocue-monitor
+    env: python
+    plan: free              # or starter/pro if you upgrade later
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "bash render_start.sh"
